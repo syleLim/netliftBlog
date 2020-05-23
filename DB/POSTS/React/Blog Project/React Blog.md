@@ -30,7 +30,7 @@
     <p></p>
     
     
-  ```=
+  ```javascript
   react-blog
       ├── node_modules
       ├── src
@@ -55,7 +55,7 @@
 - ### Module 설치
      - [**npm 이란?**](https://uploadLater)
      
-  ```
+  ```javascript
   //react 관련 모듈
   npm install --save-dev react react-dom
   //webpack 관련 모듈
@@ -66,7 +66,8 @@
 <br><br>
 - ### 최초 기본 파일 생성
     #### 기본 디렉토리
-    ```=
+    
+    ```javascript
     react-blog
         ├── node_modules
         ├── src
@@ -82,7 +83,7 @@
     
     #### Webpack.config.js [**(webpack 이란?)**]()
 
-    ```javascript=
+    ```javascript
     const path = require('path')  
     const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -112,7 +113,8 @@
     ```
     
     #### babelrc [(balbel 이란?)]()
-    ```json=
+    
+    ```javascript
     {
         "presets": [
             "@babel/env",
@@ -122,7 +124,8 @@
     ```
 
     #### index.html
-    ```html=
+    
+    ```javascript
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -138,7 +141,7 @@
     ```
 
     #### index.js
-    ```javascript=
+    ```javascript
     import React from 'react';
     import ReactDOM from 'react-dom';
     import App from './component/App' //최초의 component 파일 경로
@@ -148,7 +151,7 @@
 <br><br>
 - ### 최초 component 생성
     #### component/App.js
-    ```javascript=
+    ```javascript
     import React from 'react'
 
     class App extends React.Component {    
@@ -167,7 +170,7 @@
 - #### build 명령어 설정
 package.json의 스크립트를 아래와 같이 수정 [(Why?)]()
   #### package.json
-  ```json=
+  ```javascript
   ...
   "scripts": {
       "start": "webpack-dev-server --mode development --open --hot",
@@ -177,7 +180,7 @@ package.json의 스크립트를 아래와 같이 수정 [(Why?)]()
   ```
 <br><br>
  - #### 실행
-     ```=
+     ```javascript
      npm start
      ```
 

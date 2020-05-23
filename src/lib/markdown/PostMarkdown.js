@@ -1,10 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const PostMarkDown = ({content}) => {
-	return (
-		<div dangerouslySetInnerHTML={{__html : content}} />
-	)
+class PostMarkDown extends React.Component  {
+	
+	render () {
+		return (	
+			<div dangerouslySetInnerHTML={{__html : this.props.content}} />
+		)
+	}
 }
 
 PostMarkDown.propTypes = {

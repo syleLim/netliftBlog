@@ -12,7 +12,8 @@
 ### Step 1: 모듈 설치
   - [**Redux**]()
   - [**React Router**]()
-```
+
+```javascript
 //Redux 모듈
 npm install --save-dev redux react-redux
 npm install --save-dev redux-actions
@@ -23,7 +24,8 @@ npm install --save-dev react-router-dom
 
 ### Step 2: 기본 파일 생성
 #### 기본 구조
-  ```=
+  
+  ```javascript
   react-blog
       ├── node_modules
       ├── src
@@ -45,7 +47,7 @@ npm install --save-dev react-router-dom
   ``` 
 
 #### Root.js
-```javascript=
+```javascript
 import React                    from "react"
 import { BrowserRouter }        from "react-router-dom"
 import { createStore }          from "redux"
@@ -72,7 +74,7 @@ export default Root;
 ```
 
 #### container/AppContainer.js
-```javascript=
+```javascript
 import React			from "react"
 import { connect }		from "react-redux"
 
@@ -96,7 +98,7 @@ export default AppContainer = connect(
 ```
 
 #### component/AppComponent.js
-```javascript=
+```javascript
 import React     from "react"
 import { Route } from "react-router-dom"
 import Home      from "../page/Home"
@@ -116,7 +118,7 @@ export default App;
 ```
 
 #### index.js
-```javascript=
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './Root' //최초의 component 파일 경로
@@ -125,7 +127,7 @@ ReactDOM.render(<Root/>, document.getElementById('root'))
 ```
 
 #### page/Home.js
-```javascript=
+```javascript
 import React from "react"
 
 const Home = () => (
@@ -138,7 +140,7 @@ export default Home;
 ```
 
 ### module/HomeAction.js
-```javascript=
+```javascript
 import { handleActions, createAction }	from "redux-actions"
 
 const actionType = ""
