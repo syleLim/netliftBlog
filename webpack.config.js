@@ -2,6 +2,19 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const marked = require('marked')
 const renderer = new marked.Renderer()
+renderer.image = function (href, title, text) {
+    if (title) {                                                                                                              
+        var size = title.split('x');                                                                                          
+        if (size[1]) {                                                                                                        
+            size = 'width=' + size[0] + ' height=' + size[1];                                                                 
+        } else {                                                                                                              
+            size = 'width=' + size[0];                                                                                        
+        }                                                                                                                     
+    } else {                                                                                                                  
+        size = '';                                                                                                            
+    }        
+    return ('<img src="' + href + '" alt="' + text + '" ' + size + '>');
+} 
 const highlight = require('highlight.js')
 
 module.exports = {
@@ -38,6 +51,7 @@ module.exports = {
                                 return `<span class="hljs">${html}</span>`;
                             },
                             breaks : true,
+                            renderer : renderer
                         }
                     }
                 ]

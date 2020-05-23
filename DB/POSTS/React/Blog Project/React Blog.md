@@ -185,4 +185,4 @@ package.json의 스크립트를 아래와 같이 수정 [(Why?)]()
      ```
 
 ## 결과물
-![an image](/DB/src/React/Blog%20Project/React%20Blog.md/result.png)
+![alt](/DB/src/React/Blog%20Project/React%20Blog.md/result.png "500")
