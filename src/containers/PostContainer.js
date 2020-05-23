@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux"
 
 import { PostComponent } from "../component"
 import * as PostAction from "../modules/PostAction"
+import DB from "../../DB"
 
 class PostContainer extends React.Component {
 	loadData () {
@@ -11,7 +12,9 @@ class PostContainer extends React.Component {
 				groupName,
 				categoryName,
 				postName } = this.props;
-		PostAction.getPost(groupName, categoryName, postName);
+		PostAction.getPost(DB[groupName.replace(/(\s*)/g, "")]
+							[categoryName.replace(/(\s*)/g, "")]
+							[postName.replace(/(\s*)/g, "")]);
 	}
 
 	componentDidMount () {

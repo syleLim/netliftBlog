@@ -1,14 +1,8 @@
 import { List, Map, fromJS }			from "immutable"
 import { handleActions, createAction }	from "redux-actions"
-import axios 							from "axios"
-import { pender }						from "redux-pender"
-
-const getDataAPI = () => {
-	return axios.get("/DB/information.json")
-}
 
 const GET_DATA = "GET_DATA"
-export const getData = createAction(GET_DATA, getDataAPI);
+export const getData = createAction(GET_DATA);
 
 const initialState = Map({
 	user			: "no data",
@@ -41,32 +35,21 @@ const initialState = Map({
 })
 
 export default handleActions({	
-	...pender({
-		type		: GET_DATA,
-		onSuccess	: (state, action) => {
-			const { user,
-					userDescription,
-					blogTitle,
-					blogDescription,
-					lastPosts,
-					POSTS } = action.payload.data;
-
-			return state.set("user", user)
-						.set("userDescription", userDescription)
-						.set("blogTitle", blogTitle)
-						.set("blogDescription", blogDescription)
-						.set("lastPosts", fromJS(lastPosts))
-						.set("POSTS", fromJS(POSTS));
-		},
-		onPending	: (state, action) => {
-			console.log("root pending");
-			return state
-		},
-		onFailure	: (state, action) => {
-			console.log("file dont exist");
-			return state
-		}
-	})
+	
+	[GET_DATA] : (state, action) => {
+		const { user,
+				userDescription,
+				blogTitle,
+				blogDescription,
+				lastPosts,
+				POSTS } = action.payload;
+		return state.set("user", user)
+					.set("userDescription", userDescription)
+					.set("blogTitle", blogTitle)
+					.set("blogDescription", blogDescription)
+					.set("lastPosts", fromJS(lastPosts))
+					.set("POSTS", fromJS(POSTS));
+	},
 }, initialState);
 
 /*

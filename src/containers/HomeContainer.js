@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 import { List, Record, Map } from "immutable"
 import { bindActionCreators } from "redux"
 
-import { HomeComponent } from "../component"
+import { HomeComponent }	from "../component"
 
 class HomeContainter extends React.Component {
 

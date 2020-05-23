@@ -15,7 +15,7 @@ const PostCompoenet = ({info, content}) => {
 	const { title, author, date } = info.toJS();
 	return (
 		<PostStyle>
-			<PostTitle>{title.slice(0, -3)}</PostTitle>
+			<PostTitle>{title}</PostTitle>
 			<PostAuthor>{author}</PostAuthor>
 			<PostDate>{date}</PostDate>
 			<PostContent>

@@ -29,7 +29,7 @@ const HomePreview = ({lastPosts}) => {
 					<PreviewDate>/ {date}</PreviewDate>
 					<PreviewTitle>
 						<StyleLink to={`/post/${groupName}/${categoryName}/${title}`}>
-							{title.slice(0, -3)}
+							{title}
 						</StyleLink>
 					</PreviewTitle>
 					<PreviewContent>

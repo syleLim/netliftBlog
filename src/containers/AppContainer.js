@@ -4,6 +4,7 @@ import { List, Map, fromJS }			from "immutable"
 import { bindActionCreators }	from "redux"
 
 import { AppComponent } 	from "../component"
+import DB					from "../../DB"
 import * as DataAction		from "../modules/DataAction"
 import * as CategoryAction	from "../modules/CategoryAction"
 
@@ -11,15 +12,11 @@ class AppContainer extends React.Component {
 	
 	loadData () {
 		const { DataAction, CategoryAction } = this.props;
-		
-		DataAction.getData().then(res => {
-			CategoryAction.getCategory(fromJS(res.data.POSTS))
-		});
-		
+		DataAction.getData(DB.information);
+		CategoryAction.getCategory(fromJS(DB.information.POSTS));
 	}
 
 	componentDidMount() {
-		console.log("app mount")
 		this.loadData();	
 	}
 

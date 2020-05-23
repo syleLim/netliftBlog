@@ -29,14 +29,24 @@ module.exports = {
                         options : {
                             pedantic : true,
                             gfm : true,
+                            highlight: function(code, language) {
+                                const hljs = require('highlight.js');
+                                const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';
+                                return hljs.highlight(validLanguage, code).value;
+                            },
                             renderer
                         }
                     }
                 ]
+            },
+            {
+                test: /\.json$/,
+                exclude : /node_modules/,
+                loader : 'json-loader',
+                type : "javascript/auto"
             }
         ]
     },
-    node : { fs : 'empty'},
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'

@@ -4,9 +4,9 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
-		["React", "Blog Project", "React Blog.md"],
-		["React", "Blog Project", "Redux Router.md"],
-		["React", "Acknownledge", "WebPack.md"]
+		["React", "Blog Project", "React Blog"],
+		["React", "Blog Project", "Redux Router"],
+		["React", "Acknownledge", "WebPack"]
 	],
 	"POSTS"				: [
 		{
@@ -29,7 +29,7 @@
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Acknownledge",
-							"title" 		: "WebPack.md",
+							"title" 		: "WebPack",
 							"author"		: "seolim",
 							"date"			: "2020-05-22",
 							"preview"		: "What is Webpack"
@@ -37,7 +37,7 @@
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Acknownledge",
-							"title" 		: "babel.md",
+							"title" 		: "babel",
 							"author"		: "seolim",
 							"date"			: "2020-05-23",
 							"preview"		: "What is babel"
@@ -50,7 +50,7 @@
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Blog Project",
-							"title" 		: "React Blog.md",
+							"title" 		: "React Blog",
 							"author"		: "seolim",
 							"date"			: "2020-05-21",
 							"preview"		: "react blot start project"
@@ -58,7 +58,7 @@
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Blog Project",
-							"title" 		: "Redux Router.md",
+							"title" 		: "Redux Router",
 							"author"		: "seolim",
 							"date"			: "2020-05-22",
 							"preview"		: "Redux and Router Setting"
