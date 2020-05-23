@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const marked = require('marked')
 const renderer = new marked.Renderer()
+const highlight = require('highlight.js')
 
 module.exports = {
     entry: './src/index.js',
@@ -19,16 +20,24 @@ module.exports = {
                 }
             },
             {
+                test: /\.css$/,
+                loader : 'css-loader'
+            },
+            {
                 test: /\.md$/,
                 use : [
-                    {
-                        loader: 'html-loader'
-                    },
+                    'html-loader',
                     {
                         loader: "markdown-loader",
                         options : {
+                            highlight: (code, lang) => {
+                                if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
+                                  return `<pre class="hljs">${code}</pre>`;
+                                }
+                                const html = highlight.highlight(lang, code).value;
+                                return `<span class="hljs">${html}</span>`;
+                            },
                             breaks : true,
-                            renderer
                         }
                     }
                 ]
