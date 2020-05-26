@@ -4,20 +4,33 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
+		["Project42", "kubernetes", "kubernetes 1"],
 		["React", "Acknownledge", "Redux 2"],
 		["React", "Acknownledge", "Redux 1"],
 		["React", "Acknownledge", "babel"],
-		["React", "Acknownledge", "WebPack"],
-		["React", "Blog Project", "React Blog"]
+		["React", "Acknownledge", "WebPack"]
 	],
 	"POSTS"				: [
 		{
-			"groupName" : "42Project",
+			"groupName" : "Project42",
 			"categories" : [
 				{
 					"categoryName"	: "miniShell",
 					"posts"			: [
 						
+					]
+				},
+				{
+					"categoryName"	: "kubernetes",
+					"posts"			: [
+						{
+							"groupName"		: "Project42",
+							"categoryName"	: "kubernetes",
+							"title" 		: "kubernetes 1",
+							"author"		: "seolim",
+							"date"			: "2020-05-26",
+							"preview"		: "What is kubernetes 1"
+						}
 					]
 				}
 			]
