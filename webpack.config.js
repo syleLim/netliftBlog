@@ -19,7 +19,7 @@ const highlight = require('highlight.js')
 
 module.exports = {
     entry: './src/index.js',
-    output: {                                          
+    output: {                  
         path: path.join(__dirname, '/dist'),
         filename: 'index_bundle.js'
     },
@@ -43,6 +43,7 @@ module.exports = {
                     {
                         loader: "markdown-loader",
                         options : {
+
                             highlight: (code, lang) => {
                                 if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
                                   return `<pre class="hljs">${code}</pre>`;

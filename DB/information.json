@@ -4,9 +4,11 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
+		["React", "Acknownledge", "Redux 1"],
+		["React", "Acknownledge", "babel"],
+		["React", "Acknownledge", "WebPack"],
 		["React", "Blog Project", "React Blog"],
-		["React", "Blog Project", "Redux Router"],
-		["React", "Acknownledge", "WebPack"]
+		["React", "Blog Project", "Redux Router"]
 	],
 	"POSTS"				: [
 		{
@@ -41,7 +43,15 @@
 							"author"		: "seolim",
 							"date"			: "2020-05-23",
 							"preview"		: "What is babel"
-						}		
+						},
+						{
+							"groupName"		: "React",
+							"categoryName"	: "Acknownledge",
+							"title" 		: "Redux 1",
+							"author"		: "seolim",
+							"date"			: "2020-05-25",
+							"preview"		: "What is Redux"
+						}
 					]
 				},
 				{
