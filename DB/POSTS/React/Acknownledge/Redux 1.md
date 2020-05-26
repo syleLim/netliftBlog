@@ -5,6 +5,7 @@
 &nbsp;&nbsp;이 내용은 react의 기초인 `state`, `props`, 리엑트간 데이터 통신, `Component`등의 기본 지식이 있다고 가정하고 작성되었습니다. 해당 지식이 없다면 먼저 학습하신 후 읽기를 추천드립니다.<br><br>&nbsp;&nbsp;또한 개념을 제외한 기본 코드는 `redux package`를 활용하여 작성되었습니다. 좀더 `low level`의 코드를 원한다면 다른 글을 참고하시는 것을 추천드립니다.
 ### redux 
 &nbsp;&nbsp;기본적으로 react는 내부에 `state`를 기반으로 데이터들을 저장하고 `props`를 통해 상위`Component`에서 하위 `Component`로 데이터를 넘겨준다.<br>그러나 최상위 `Component`에서 최하위 `Component`까지 데이터를 넘겨주거나 하는 경우 상당한 어려움과 코드의 난잡함이 따른다.<br>따라서 이를 보완하기 위해 상태관리 라이브러리를 사용하게 되고 그중 하나가 `redux`이다.
+해당 형식은 FaceBook의 **Flux**라는 패턴을 이용한 것이다. 관련 내용을 참고해 보길 추천한다.
 
 ### redux 구성 요소
 #### Store
