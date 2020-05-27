@@ -4,11 +4,11 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
+		["React", "Acknownledge", "React Router 2"],
 		["React", "Acknownledge", "React Router 1"],
 		["Project42", "kubernetes", "kubernetes 1"],
 		["React", "Acknownledge", "Redux 2"],
-		["React", "Acknownledge", "Redux 1"],
-		["React", "Acknownledge", "babel"]
+		["React", "Acknownledge", "Redux 1"]
 	],
 	"POSTS"				: [
 		{
@@ -41,6 +41,14 @@
 				{
 					"categoryName"	: "Acknownledge",
 					"posts"			: [
+						{
+							"groupName"		: "React",
+							"categoryName"	: "Acknownledge",
+							"title" 		: "React Router 2",
+							"author"		: "seolim",
+							"date"			: "2020-05-27",
+							"preview"		: "What is React Router"
+						},
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Acknownledge",
