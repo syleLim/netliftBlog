@@ -7,6 +7,15 @@ import { CategoryComponent }	from "../component"
 import * as CategoryAction		from "../modules/CategoryAction"
 
 class CategoryContainter extends React.Component {
+	loadData () {
+		const { CategoryAction } = this.props;
+		
+		CategoryAction.getCategory();
+	}
+
+	componentDidMount() {
+		this.loadData();
+	}
 
 	render () {
 		const { user, userDescription, categoryGroups } = this.props
@@ -26,7 +35,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-	
+	CategoryAction : bindActionCreators(CategoryAction, dispatch)
 });
 
 export default CategoryContainter = connect(

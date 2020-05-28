@@ -5,52 +5,31 @@ import { List, Map, Record } from "immutable"
 
 import { PostComponent } from "../component"
 import * as PostAction from "../modules/PostAction"
-import DB from "../../DB"
 
 class PostContainer extends React.Component {
 	loadData () {
-		const { PostAction,
-				groupName,
-				categoryName,
-				postName } = this.props;
-		PostAction.getPost(DB[groupName.replace(/(\s*)/g, "")]
-							[categoryName.replace(/(\s*)/g, "")]
-							[postName.replace(/(\s*)/g, "")]);
+		const { groupName, categoryName, postName, PostAction } = this.props;
+
+		PostAction.getPost(groupName, categoryName, postName);
 	}
 
 	componentDidMount () {
 		this.loadData();
 	}
 
-	getInfo () {
-		console.log(this.props.POSTS.toString())
-		console.log(this.props.content)
-		const { groupName,
-				categoryName,
-				postName,
-				POSTS } = this.props;
-		
-		return POSTS.filter(group => group.get("groupName") === groupName)
-				.get(0).get("categories")
-				.filter(category => category.get("categoryName") === categoryName)
-				.get(0).get("posts")
-				.filter(post => post.get("title") === postName)
-				.get(0)
-	}
-
 	render () {
-		const { content } = this.props;
+		const { postInfo, content } = this.props;
 		
 		return (<PostComponent
-					info={this.getInfo()}
+					info={postInfo}
 					content={content}
 				/>)
 	}
 }
 
 const mapStateToProps = (state) => ({
-	POSTS	: state.DataAction.get("POSTS"),
-	content	: state.PostAction.get("content")
+	postInfo	: state.PostAction.get("postInfo"),
+	content		: state.PostAction.get("content")
 });
 
 const mapDispatchToProps = (dispatch) => ({

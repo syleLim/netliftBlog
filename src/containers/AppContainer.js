@@ -2,24 +2,17 @@ import React					from "react"
 import { connect }				from "react-redux"
 import { List, Map, fromJS }			from "immutable"
 import { bindActionCreators }	from "redux"
-
 import { AppComponent } 	from "../component"
+
 import DB					from "../../DB"
 import * as DataAction		from "../modules/DataAction"
 import * as CategoryAction	from "../modules/CategoryAction"
 
 class AppContainer extends React.Component {
-	constructor (props)
-	{
-		super(props)
-		this.loadData();
-	}
-
-
 	loadData () {
-		const { DataAction, CategoryAction } = this.props;
-		DataAction.getData(DB.information);
-		CategoryAction.getCategory(fromJS(DB.information.POSTS));
+		const { DataAction } = this.props;
+		
+		DataAction.getData();
 	}
 
 	componentDidMount() {
@@ -27,9 +20,6 @@ class AppContainer extends React.Component {
 	}
 
 	render () {
-		console.log(localStorage.getItem("POSTS"))
-		localStorage.setItem("POSTS", this.props.POSTS);
-		console.log(typeof(localStorage.getItem("POSTS")))
 		return (
 			<AppComponent />
 		)
@@ -47,7 +37,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
 	DataAction		: bindActionCreators(DataAction, dispatch),
-	CategoryAction 	: bindActionCreators(CategoryAction, dispatch)
 })
 
 export default AppContainer = connect(
