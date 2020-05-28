@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
+import { List, Map, Record } from "immutable"
 
 import { PostComponent } from "../component"
 import * as PostAction from "../modules/PostAction"
@@ -22,6 +23,8 @@ class PostContainer extends React.Component {
 	}
 
 	getInfo () {
+		console.log(this.props.POSTS.toString())
+		console.log(this.props.content)
 		const { groupName,
 				categoryName,
 				postName,

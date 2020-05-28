@@ -4,11 +4,11 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
+		["React", "Blog Project", "Styled Apply"],
 		["Project42", "kubernetes", "kubernetes 2"],
 		["React", "Acknownledge", "React Router 2"],
 		["React", "Acknownledge", "React Router 1"],
-		["Project42", "kubernetes", "kubernetes 1"],
-		["React", "Acknownledge", "Redux 2"]
+		["Project42", "kubernetes", "kubernetes 1"]
 	],
 	"POSTS"				: [
 		{
@@ -102,6 +102,14 @@
 				{
 					"categoryName"	: "Blog Project",
 					"posts"			: [
+						{
+							"groupName"		: "React",
+							"categoryName"	: "Blog Project",
+							"title" 		: "Styled Apply",
+							"author"		: "seolim",
+							"date"			: "2020-05-28",
+							"preview"		: "Styled Appling Basic"
+						},
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Blog Project",

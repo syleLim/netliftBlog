@@ -9,7 +9,13 @@ import * as DataAction		from "../modules/DataAction"
 import * as CategoryAction	from "../modules/CategoryAction"
 
 class AppContainer extends React.Component {
-	
+	constructor (props)
+	{
+		super(props)
+		this.loadData();
+	}
+
+
 	loadData () {
 		const { DataAction, CategoryAction } = this.props;
 		DataAction.getData(DB.information);
@@ -17,10 +23,13 @@ class AppContainer extends React.Component {
 	}
 
 	componentDidMount() {
-		this.loadData();	
+		this.loadData();
 	}
 
 	render () {
+		console.log(localStorage.getItem("POSTS"))
+		localStorage.setItem("POSTS", this.props.POSTS);
+		console.log(typeof(localStorage.getItem("POSTS")))
 		return (
 			<AppComponent />
 		)

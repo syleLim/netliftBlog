@@ -1,4 +1,5 @@
 import ReactBlog from "./React Blog.md"
 import ReduxRouter from "./Redux Router.md"
+import StyledApply from "./Styled Apply.md"
 
-export default { ReactBlog, ReduxRouter }
+export default { ReactBlog, ReduxRouter, StyledApply }
