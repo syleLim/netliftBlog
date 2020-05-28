@@ -4,11 +4,11 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
+		["Project42", "kubernetes", "kubernetes 3"],
 		["React", "Acknownledge", "Styled component"],
 		["React", "Blog Project", "Styled Apply"],
 		["Project42", "kubernetes", "kubernetes 2"],
-		["React", "Acknownledge", "React Router 2"],
-		["React", "Acknownledge", "React Router 1"]
+		["React", "Acknownledge", "React Router 2"]
 	],
 	"POSTS"				: [
 		{
@@ -23,6 +23,14 @@
 				{
 					"categoryName"	: "kubernetes",
 					"posts"			: [
+						{
+							"groupName"		: "Project42",
+							"categoryName"	: "kubernetes",
+							"title" 		: "kubernetes 3",
+							"author"		: "seolim",
+							"date"			: "2020-05-28",
+							"preview"		: "What is kubernetes 3"
+						},
 						{
 							"groupName"		: "Project42",
 							"categoryName"	: "kubernetes",
