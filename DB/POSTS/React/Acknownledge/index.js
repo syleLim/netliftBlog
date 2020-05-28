@@ -4,5 +4,6 @@ import Redux1 from "./Redux 1.md"
 import Redux2 from "./Redux 2.md"
 import ReactRouter1 from "./React Router 1.md"
 import ReactRouter2 from "./React Router 2.md"
+import Styledcomponent from "./Styled component.md"
 
-export default { babel, WebPack, Redux1, Redux2, ReactRouter1, ReactRouter2 }
+export default { babel, WebPack, Redux1, Redux2, ReactRouter1, ReactRouter2, Styledcomponent }

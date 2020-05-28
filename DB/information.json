@@ -4,11 +4,11 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
+		["React", "Acknownledge", "Styled component"],
 		["React", "Blog Project", "Styled Apply"],
 		["Project42", "kubernetes", "kubernetes 2"],
 		["React", "Acknownledge", "React Router 2"],
-		["React", "Acknownledge", "React Router 1"],
-		["Project42", "kubernetes", "kubernetes 1"]
+		["React", "Acknownledge", "React Router 1"]
 	],
 	"POSTS"				: [
 		{
@@ -49,6 +49,14 @@
 				{
 					"categoryName"	: "Acknownledge",
 					"posts"			: [
+						{
+							"groupName"		: "React",
+							"categoryName"	: "Acknownledge",
+							"title" 		: "Styled component",
+							"author"		: "seolim",
+							"date"			: "2020-05-28",
+							"preview"		: "Basic Styled component"
+						},
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Acknownledge",
