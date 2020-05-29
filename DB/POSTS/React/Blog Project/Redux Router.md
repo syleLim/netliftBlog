@@ -10,8 +10,8 @@
 #### Redux와 Router를 설정한다.<br><br>
 
 ### Step 1: 모듈 설치
-  - [**Redux**]()
-  - [**React Router**]()
+  - [**Redux**](/post/React/Acknownledge/Redux%201)
+  - [**React Router**](/post/React/Acknownledge/React%20Router%201)
 
 ```javascript
 //Redux 모듈

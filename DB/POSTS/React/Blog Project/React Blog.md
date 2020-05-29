@@ -26,7 +26,6 @@
    - **src** : 모든 페이지 구성 소스가 담긴 디렉토리
    - **DB** : 블로그 정보와 post가 담긴 디렉토리
    - **etc** : react 정보 파일들
-   - [**정보 파일들**](/post/React/Acknownledge/WebPack.md)
     <p></p>
     
     
@@ -53,7 +52,7 @@
   ``` 
 <br><br>
 - ### Module 설치
-     - [**npm 이란?**](https://uploadLater)
+     - [**npm 이란?**]()
      
   ```javascript
   //react 관련 모듈
@@ -81,7 +80,7 @@
         └── webpack.config.js
     ``` 
     
-    #### Webpack.config.js [**(webpack 이란?)**]()
+    #### Webpack.config.js [**(webpack 이란?)**](/post/React/Acknownledge/WebPack)
 
     ```javascript
     const path = require('path')  
@@ -112,7 +111,7 @@
     }
     ```
     
-    #### babelrc [(balbel 이란?)]()
+    #### babelrc [(balbel 이란?)](/post/React/Acknownledge/babel)
     
     ```javascript
     {

@@ -11,7 +11,7 @@
 <br><br><br>
 
 ## 사전 지식
-### [styled-component]()
+### [styled-component](/post/React/Acknownledge/Styled%20component)
 &nbsp;&nbsp;**React**에서 인라인(inline)스타일을 담당하는 모듈, [공식문서](https://styled-components.com/docs)에 자세히 설명이 되어있다.
 <br><br>
 
