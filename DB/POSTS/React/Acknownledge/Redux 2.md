@@ -25,10 +25,12 @@ const initialState = {
 /*
 * Reducer인 부분이다.
 * 설정된 Action(해당 코드에선 TEST)이 발생하면 실행될 함수를 지정한다.
+* 이 때 변수는 action의 payload에 저장된다.
 * 반환값은 변경된 state여야한다.
 */
 export default handleActions({
 	[TEST] : (state, action) => {
+        console.log(action.payload) //호출할 때 넣어준 값
 		return state;
 	}
 }, initialState);
