@@ -4,11 +4,11 @@
 	"blogTitle"			: "seolim`s blog",
 	"blogDescription"	: "doing anything",
 	"lastPosts"			: [
+		["React", "Acknownledge", "immutable JS"],
+		["React", "Blog Project", "Category Component"],
 		["React", "Acknownledge", "Redux with Promise 2"],
 		["React", "Acknownledge", "Redux with Promise 1"],
-		["React", "Blog Project", "App Structure"],
-		["Project42", "kubernetes", "kubernetes 3"],
-		["React", "Acknownledge", "Styled component"]
+		["React", "Blog Project", "App Structure"]
 	],
 	"POSTS"				: [
 		{
@@ -57,6 +57,14 @@
 				{
 					"categoryName"	: "Acknownledge",
 					"posts"			: [
+						{
+							"groupName"		: "React",
+							"categoryName"	: "Acknownledge",
+							"title" 		: "immutable JS",
+							"author"		: "seolim",
+							"date"			: "2020-05-30",
+							"preview"		: "how to use immutable-js"
+						},
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Acknownledge",
@@ -134,6 +142,14 @@
 				{
 					"categoryName"	: "Blog Project",
 					"posts"			: [
+						{
+							"groupName"		: "React",
+							"categoryName"	: "Blog Project",
+							"title" 		: "Category Component",
+							"author"		: "seolim",
+							"date"			: "2020-05-30",
+							"preview"		: "Make Category Component"
+						},
 						{
 							"groupName"		: "React",
 							"categoryName"	: "Blog Project",

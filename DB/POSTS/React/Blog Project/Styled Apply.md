@@ -1,5 +1,5 @@
 ### React Blog Project
-# Home Component
+# Styled Component
 [https://github.com/syleLim/react-blog](https://github.com/syleLim/react-blog)<br><br>
 
 ## 주의사항
