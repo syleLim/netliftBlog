@@ -13,7 +13,7 @@
 <br><br><br><br>
 
 ## 사전지식
-1. [immutable JS]()
+1. [immutable JS](/post/React/Acknownledge/immutable%20JS)
 2. [Component prop-types]()
 <br><br><br><br>
 
